@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="block.h" />
+    <ClInclude Include="blockdevice.h" />
+    <ClInclude Include="filesystem.h" />
+    <ClInclude Include="memblockdevice.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="block.cpp" />
+    <ClCompile Include="blockdevice.cpp" />
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="memblockdevice.cpp" />
+    <ClCompile Include="shell.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0F791AF5-5A34-4474-9BD2-A861346EB8E5}</ProjectGuid>
     <RootNamespace>SimulatedHarddriveFileSystem</RootNamespace>
@@ -27,26 +40,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -109,19 +122,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\block.h" />
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\blockdevice.h" />
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\filesystem.h" />
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\memblockdevice.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\block.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\blockdevice.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\filesystem.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\memblockdevice.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\shell.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -15,33 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\block.h">
+    <ClInclude Include="block.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\blockdevice.h">
+    <ClInclude Include="blockdevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\filesystem.h">
+    <ClInclude Include="filesystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\memblockdevice.h">
+    <ClInclude Include="memblockdevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\block.cpp">
+    <ClCompile Include="block.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\blockdevice.cpp">
+    <ClCompile Include="blockdevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\filesystem.cpp">
+    <ClCompile Include="filesystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\memblockdevice.cpp">
+    <ClCompile Include="memblockdevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Desktop\Skolarbete\Operativsystem\Filsystem projekt\Helpfiles\src\shell.cpp">
+    <ClCompile Include="shell.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
